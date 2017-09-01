@@ -319,7 +319,6 @@ if(NOT Slicer_DIR)
   # For a build tree
   set(CONFIG_DIR_CONFIG ${CMAKE_BINARY_DIR})
   set(DCMTK_DIR_CONFIG ${DCMTK_DIR})
-  set(SlicerExecutionModel_DIR_CONFIG ${SlicerExecutionModel_DIR})
   set(${PROJECT_NAME}_CONFIG_CODE "####### Expanded from \@DCMQI_CONFIG_CODE\@ #######\n")
   set(${PROJECT_NAME}_CONFIG_CODE "find_package(DCMTK NO_MODULE REQUIRED)\n")
   set(${PROJECT_NAME}_CONFIG_CODE "${${PROJECT_NAME}_CONFIG_CODE}##################################################")
@@ -331,7 +330,6 @@ if(NOT Slicer_DIR)
       PATH_VARS
         CONFIG_DIR_CONFIG
         DCMTK_DIR_CONFIG
-        SlicerExecutionModel_DIR_CONFIG
       NO_CHECK_REQUIRED_COMPONENTS_MACRO
   )
 
